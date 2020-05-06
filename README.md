@@ -1,2 +1,2 @@
-# DefaultThemes
-default themes used in Typora
+# Typora Themes
+Fork from Typora default themes
