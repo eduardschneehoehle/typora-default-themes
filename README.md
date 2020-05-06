@@ -9,4 +9,4 @@ Adapted from Github Dark
 * Made for easy visibility 
 
 ### Installation
-Win: Place into 'C:\Users\YOURNAME\AppData\Roaming\Typora\themes'
+Place within main Typora folder `...\Typora\themes\`
