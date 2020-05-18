@@ -1,25 +1,25 @@
 :root {
-    --side-bar-bg-color: #202020;
+    --side-bar-bg-color: #181a1f;
     --control-text-color: #777;
-    --active-file-bg-color: #384047;
-    --control-text-hover-color: #60d9f1;
-    --item-hover-bg-color: #384047;
+    --active-file-bg-color: #414650;
+    --control-text-hover-color: #61afef;
+    --item-hover-bg-color: #414650;
     --text-color: #c0c0c0;
-    --bg-color: #282828;
+    --bg-color: #21252b;
 }
 
 /*MAIN COLORS
-#60d9f1 - blue;
-#e3c18a - orange;
+#e5c07b - yellow;
+#61afef - blue;
+#d29b62 - orange;
 #e71f68 - magenta;
-#a4e405 - green;
-#202020 - darkest gray;
-#282828 - dark gray;
-#384047 - light gray;
+#98c379 - green;
+#181a1f - darkest gray;
+#21252b - dark gray;
+#414650 - light gray;
 */
 
-/*
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+/*@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
  
 @font-face {
     font-family: 'Open Sans';
@@ -49,10 +49,7 @@
     src: local('Open Sans Bold Italic'),url('./github/700i.woff') format('woff');
 }
 
-html {
-    font-size: 16px;
-}
- */
+*/
 
 /*MAIN DESIGN*/
  
@@ -61,12 +58,12 @@ body {
 	font-family: Courier;
     /*color: rgb(51, 51, 51);*/
     color: #c0c0c0;
-    background-color: #282828;
+    background-color: #21252b;
     line-height: 1.6;
 }
 
 #write {
-    max-width: 1600px;
+    max-width: 1280px;
   	margin: 0 auto;
   	padding: 30px;
     padding-bottom: 100px;
@@ -78,11 +75,16 @@ body {
 }
 
 #recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: #282828;
+    background-color: #21252b;
 }
 
 table, input {
-    border: 1px solid #e3c18a !important;
+    border: 1px solid #61afef !important;
+}
+
+p .md-image:only-child{
+    width: auto;
+    text-align: left;
 }
 
 /*HEADING STYLES*/
@@ -99,8 +101,9 @@ h6 {
     font-weight: bold;
     line-height: 1.4;
     cursor: text;
-	color: #e3c18a;
+	color: #e5c07b;
 }
+
 h1:hover a.anchor,
 h2:hover a.anchor,
 h3:hover a.anchor,
@@ -134,55 +137,55 @@ h6 tt,
 h6 code {
     font-size: inherit;
 }
+
 h1 {
-    padding-bottom: .3em;
-    font-size: 2.4em;
-    line-height: 1.2;
-    border-bottom: 1px solid #e3c18a;
+	font-size: 2.4em;
+	font-weight: bolder;
+    line-height: 1.25;
+	padding-left: 0.2em;
+	background-color: #414650;
 }
 
 h2 {
-   padding-bottom: .3em;
     font-size: 1.7em;
+	font-weight: bolder;
     line-height: 1.225;
-    border-bottom: 1px solid #e3c18a;
-}
-
-h2:before {
-  content: "## ";
+	/*padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border-top: 1px solid #414650;
+    border-bottom: 1px solid #414650;*/
+	padding-left: 0.2em;
+	background-color: #414650;
 }
 
 h3:before,
 h3.md-focus:before {
-  content: "### ";
+  content: "> ";
 }
 
 h3 {
     font-size: 1.2em;
-    line-height: 1.2em;
+    line-height: 1.2;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border-top: 1px solid #414650;
+    border-bottom: 1px solid #414650;
 }
 
 h4:before,
 h4.md-focus:before {
-  content: "#### ";
+  content: "- ";
 }
 
 h4 {
     font-size: 1.1em;
+	/*border-top: 1px solid #414650;
+    border-bottom: 1px solid #414650;*/
 }
 
-h5:before,
-h5.md-focus:before {
-  content: "##### ";
-}
 
 h5 {
     font-size: 1em;
-}
-
-h6:before,
-h6.md-focus:before {
-  content: "###### ";
 }
 
 h6 {
@@ -197,7 +200,7 @@ a.md-focus:before {
 }
 
 a {
-    color: #60d9f1;
+    color: #61afef;
 }
 
 p,
@@ -208,6 +211,7 @@ dl,
 table{
     margin: 0.8em 0;
 }
+
 li>ol,
 li>ul {
     margin: 0 0;
@@ -215,8 +219,8 @@ li>ul {
 hr {
     height: 2px;
     padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
+    margin: 32px 0;
+    background-color: #414650;
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
@@ -228,6 +232,7 @@ li p.first {
 ul,
 ol {
     padding-left: 30px;
+	margin-bottom: 3em;
 }
 ul:first-child,
 ol:first-child {
@@ -238,7 +243,7 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-left: 4px solid #384047;
+    border-left: 4px solid #414650;
     padding: 0 15px;
     color: #999;
 }
@@ -251,24 +256,24 @@ table {
     background-color: var(--bg-color);
 }
 table tr {
-    border-top: 1px solid #384047;
+    border-top: 1px solid #414650;
     margin: 0;
     padding: 0;
 }
 table tr:nth-child(2n),
 thead {
-    background-color: #384047;
+    background-color: #414650;
 }
 table tr th {
     font-weight: bold;
-    border: 1px solid #384047;
+    border: 1px solid #414650;
     border-bottom: 0;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
-    border: 1px solid #384047;
+    border: 1px solid #414650;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
@@ -294,8 +299,8 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 1px solid #384047;
-    background-color: #384047;
+    border: 1px solid #444444;
+    background-color: #414650;
     border-radius: 3px;
     padding: 0;
     padding: 2px 4px 0px 4px;
@@ -303,7 +308,7 @@ tt {
 }
 
 code {
-    background-color: #384047;
+    background-color: #414650;
     padding: 0 4px 2px 4px;
 }
 
@@ -337,14 +342,14 @@ strong {
 }
 
 .md-fences {
-    background-color: #384047;
+    background-color: #414650;
     /* color: aaa; */
 }
 #write pre.md-meta-block {
 	padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
-    background-color: #384047;
+    background-color: #414650;
     border: 0;
     border-radius: 3px;
     color: #aaa;
@@ -413,12 +418,13 @@ strong {
 
 #typora-sidebar {
     border-bottom: 1px solid #090b11;
+	/*font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;*/ 
     font-family: Courier !important;
 }
 
 #typora-sidebar .file-tree-node.file-library-file-node.active .file-node-background, #typora-sidebar .file-list-item.file-library-file-node.active {
-    background: #282828;
-    border-left: 4px solid #60d9f1;
+    background: #21252b;
+    border-left: 4px solid #61afef;
     color: #fff;
 
 /** focus mode */
@@ -431,12 +437,12 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 .megamenu-content {
-    background: #282828 !important;
+    background: #21252b !important;
     /* background: linear-gradient(to bottom, #24292e00, #24292e), url(cubes.png); */
 }
 
 .megamenu-opened header {
-    background-color: #282828;
+    background-color: #21252b;
     background-image: none;
 }
 
